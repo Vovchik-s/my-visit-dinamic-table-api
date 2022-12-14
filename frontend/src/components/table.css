@@ -1,0 +1,150 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+body {
+  margin            : 0;
+  background        : linear-gradient(45deg, #49a09d, #5f2c82);
+  font-family       : sans-serif;
+  font-weight       : 100;
+  font-size         : .9rem;
+  color             : #333;
+  background        : linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size   : 400% 400%;
+  animation         : Gradient 15s ease infinite;
+  /* display        : flex;
+  align-items       : center;
+  justify-content   : center; */
+
+}
+
+
+table {
+  width          : 800px;
+  border-collapse: collapse;
+  overflow       : hidden;
+  box-shadow     : 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+
+th,
+td {
+  padding         : 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color           : #fff;
+}
+
+th {
+  text-align: left;
+}
+
+thead tr:first-child th {
+  padding-left   : 30%;
+  font-size      : large;
+  font-family    : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight    : bold;
+  text-transform : uppercase;
+  align-items    : center;
+  justify-content: center;
+  color          : #333;
+}
+
+thead th {
+  background-color: #55608f;
+}
+
+
+tbody tr:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+
+tbody td {
+  position: relative;
+}
+
+tbody tr td:last-child {
+  overflow     : hidden;
+  max-width    : 100px;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+}
+
+tbody tr:hover td:last-child {
+  position      : absolute;
+  max-width     : 100%;
+  /* white-space: nowrap; */
+  z-index       : 1;
+}
+
+
+tbody tr:nth-child(odd) td {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+tbody tr:nth-child(even) td {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+tbody td:hover:before {
+  content         : "";
+  position        : absolute;
+  left            : 0;
+  right           : 0;
+  top             : -9999px;
+  bottom          : -9999px;
+  background-color: rgba(255, 255, 255, 0.2);
+  z-index         : -1;
+
+}
+
+input,
+select, button {
+  cursor                    : pointer;
+  background-color          : rgba(0, 0, 0, 0.30);
+  height                    : 45px;
+  width                     : 150px;
+  padding                   : 10px;
+  border                    : none;
+  border-radius             : 5px;
+  color                     : white;
+  display                   : inline-block;
+  font-size                 : 15px;
+  text-align                : center;
+  text-decoration           : none;
+  appearance                : none;
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin            : 0;
+}
+
+@media (max-width: 1300px) {
+  .appURL{
+    display: none;
+  }
+}
+
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}

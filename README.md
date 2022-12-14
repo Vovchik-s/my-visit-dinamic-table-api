@@ -12,3 +12,6 @@ This application was created in order to facilitate navigation and ordering the 
  *Terminal*server : Node server.js
  [3]
  *Terminal*frontend : npm start
+ 
+ ![myVisit-table](https://github.com/[Vovchik-s]/[/my-visit-dinamic-table-api]/blob/[main]/photo_2022-12-14_11-24-13.jpg?raw=true)
+ 
